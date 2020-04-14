@@ -1,0 +1,46 @@
+---
+layout: page
+title: 'Plugins Index'
+---
+
+{%- for p in site.data.plugins -%}
+    <a href="#{{- p[0] -}}" class="btn btn-primary plugin-btn" title="{{- p[0] -}}&nbsp;plugin&nbsp;version&nbsp;{{- p[1].version -}}"><i class="fa fa-plug" aria-hidden="true"></i>&nbsp;{{- p[0] -}}</a>
+{%- endfor -%}
+
+<div id="full-plugins-list" class="posts-list">
+{%- for p in site.data.plugins -%}
+    {% assign name = p[0] %}
+    {% assign plugin = p[1] %}
+    <article class="post-preview">
+        <a href="https://github.com/metgem/plugins-{{- name -}}/archive/v{{plugin.version}}.zip/">
+            <h2 id="{{- name -}}" class="linked-section">
+                <i class="fa fa-plug" aria-hidden="true"></i>&nbsp;{{- name -}}&nbsp;v{{- plugin.version -}}
+            </h2>
+        </a>
+            
+        {% if plugin.author %}
+        <p class="post-meta">
+            {% if plugin.email %}
+            Author: <a href="mailto:{{- plugin.email -}}">{{plugin.author}}</a>
+            {% else %}
+            Author: {{plugin.author}}
+            {% endif %}
+        </p>
+        {% endif %}
+        
+        {% if plugin.copyright %}
+        <p class="post-meta">
+            {{plugin.copyright}}
+        </p>
+        {% endif %}
+
+        {% if plugin.description %}
+        <div class="post-entry-container">
+            <div class="post-entry">
+                {{- plugin.description -}}
+            </div>
+        </div>
+        {% endif %}
+    </article>
+{%- endfor -%}
+</div>

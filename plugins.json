@@ -1,0 +1,16 @@
+---
+layout: null
+---
+
+[
+{% for p in site.data.plugins %}
+    {% assign name = p[0] %}
+    {% assign plugin = p[1] %}
+    {
+      "name"    : "{{- name -}}",
+      {% for meta in plugin %}
+      "{{- meta[0] -}}" : "{{- meta[1] }}" {% if forloop.last %}{% else %},{% endif %}
+      {% endfor %}
+    } {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+] 
