@@ -9,8 +9,9 @@ layout: null
     {
       "name"    : "{{- name -}}",
       {% for meta in plugin %}
-      "{{- meta[0] -}}" : "{{- meta[1] }}" {% if forloop.last %}{% else %},{% endif %}
+      "{{- meta[0] -}}" : "{{- meta[1] }}",
       {% endfor %}
+      "url"     : "https://github.com/metgem/plugins-{{- name -}}/archive/v{{plugin.version}}.zip/"
     } {% if forloop.last %}{% else %},{% endif %}
 {% endfor %}
 ] 
