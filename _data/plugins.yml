@@ -1,5 +1,5 @@
 msdial:
-    version: 1.1
+    version: 1.2
     description: MetGem plugin to download databases from MS-DIAL website
     author: Nicolas Elie
     email: nicolas.elie@cnrs.fr
