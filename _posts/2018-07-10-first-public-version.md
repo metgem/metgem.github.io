@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First public version !
-image: /assets/img/hello_world.jpeg
+thumbnail-img: /assets/img/hello_world.jpeg
 ---
 
 MetGem version 1.0 has been released today.
