@@ -1,0 +1,17 @@
+---
+layout: null
+---
+
+[
+{% for p in site.data.plugins %}
+    {% assign name = p[0] %}
+    {% assign plugin = p[1] %}
+    {
+      "name"    : "{{- name -}}",
+      {% for meta in plugin %}
+      "{{- meta[0] -}}" : "{{- meta[1] }}",
+      {% endfor %}
+      "url"     : "https://github.com/metgem/plugins-{{- name -}}/archive/v{{plugin.version}}.zip/"
+    } {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+] 

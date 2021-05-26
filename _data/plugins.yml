@@ -1,0 +1,15 @@
+msdial:
+    version: 1.2
+    description: MetGem plugin to download databases from MS-DIAL website
+    author: Nicolas Elie
+    email: nicolas.elie@cnrs.fr
+    copyright: Copyright 2019-2020, CNRS/ICSN
+    license: GPLv3
+    
+isdb:
+    version: 1.0
+    description: MetGem plugin to download ISDB
+    author: Nicolas Elie
+    email: nicolas.elie@cnrs.fr
+    copyright: Copyright 2019, CNRS/ICSN
+    license: GPLv3
