@@ -24,6 +24,7 @@ description: Calculation and visualization of molecular networks based on t-SNE 
 # List of links in the navigation bar
 navbar-links:
   Download: "https://github.com/metgem/metgem/releases/latest"
+  Latest nightly: "https://github.com/metgem/metgem/releases/tag/nightly"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
