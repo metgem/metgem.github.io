@@ -13,3 +13,11 @@ isdb:
     email: nicolas.elie@cnrs.fr
     copyright: Copyright 2019, CNRS/ICSN
     license: GPLv3
+    
+gnps:
+    version: 1.0
+    description: MetGem plugin to download databases from GNPS website
+    author: Nicolas Elie
+    email: nicolas.elie@cnrs.fr
+    copyright: Copyright 2021, CNRS/ICSN
+    license: GPLv3
