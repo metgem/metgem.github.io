@@ -7,11 +7,11 @@ msdial:
     license: GPLv3
     
 isdb:
-    version: 1.0
+    version: 1.1
     description: MetGem plugin to download ISDB
     author: Nicolas Elie
     email: nicolas.elie@cnrs.fr
-    copyright: Copyright 2019, CNRS/ICSN
+    copyright: Copyright 2019-2022, CNRS/ICSN
     license: GPLv3
     
 gnps:
