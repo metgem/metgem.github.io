@@ -15,9 +15,9 @@ isdb:
     license: GPLv3
     
 gnps:
-    version: 1.0
+    version: 1.1
     description: MetGem plugin to download databases from GNPS website
     author: Nicolas Elie
     email: nicolas.elie@cnrs.fr
-    copyright: Copyright 2021, CNRS/ICSN
+    copyright: Copyright 2021-2026, CNRS/ICSN
     license: GPLv3
